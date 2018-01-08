@@ -47,3 +47,10 @@ $(".js-back").hide();
 $(".js-menu").show();
 });
 
+
+
+function printNews(){
+$('.callout-news p').append('NUEVAS RECETAS');
+}
+printNews();
+
