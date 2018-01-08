@@ -1,17 +1,19 @@
 $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
-	renderHighlightedRecipes(recipesArray);
-
-});
-
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
-function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+function renderHighlightedRecipes(recipesArray) {  /*creando funcion*/
+for (var i = 0; i < recipesArray.length; i++) { /*recorriendo una variable*/
+if( recipesArray[i].highlighted == true ) {
+renderRecipe (recipesArray[i]); 
+
+}
+}
+
 }
 
 /*
@@ -38,7 +40,8 @@ function renderActivities(activitiesArray) {
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-activity.html"
 */
-function renderActivity(recipe) {
+function renderActivity(recipe)
+ {
 	
 }
 
@@ -53,4 +56,13 @@ function printNews(){
 $('.callout-news p').append('NUEVAS RECETAS');
 }
 printNews();
+
+
+
+
+
+
+
+
+
 
